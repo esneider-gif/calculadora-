@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #eeabab;
+        }
+        .formulario {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .formulario input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .formulario button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .formulario button:hover {
+            background-color: #0056b3;
+        }
+        .formulario p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        .formulario h2 {
+            text-align: center;
+            color: #333;
+        }   
+    </style>
+
+    <div class="formulario">
+        <h2>Calculadora de IMC</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="cedula" placeholder="Cédula">
+        <input type="number" id="edad" placeholder="Edad">
+        <input type="text" id="telefono" placeholder="Teléfono">
+        <input type="number" id="peso" placeholder="Peso (kg)">
+        <input type="number" id="altura" placeholder="Altura (m)">
+        <button onclick="calcularIMC()">Calcular</button>
+        <button onclick="limpiarFormulario()">Limpiar</button>
+        <p id="resultado"></p>
+   
+
+    <script src="ejercisio.js"></script>
+</body>
+</html>
